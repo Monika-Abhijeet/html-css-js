@@ -15,7 +15,19 @@
         border-style: dashed;
         border-color: green; */
         border-collapse: collapse;
+        /* background-color: bisque; */
+        padding: 30px;
+      }
+
+      tr:nth-child(odd) {
+        background-color: aqua;
+      }
+      tr:nth-child(even) {
         background-color: bisque;
+      }
+      tr:hover {
+        background-color: blue;
+        color: white;
       }
     </style>
   </head>
@@ -68,7 +80,7 @@
     >
       Heading 2
     </p>
-    <div style="background-color: aqua">
+    <div>
       <h1>This is demo of div tag</h1>
       <p>This is paragraph1</p>
       <p>This is paragraph2</p>
@@ -140,12 +152,108 @@
           <td>Present</td>
         </tr>
         <tr>
-          <td>2</td>
+          <td>3</td>
           <td>Gaanavi</td>
           <td>Present</td>
           <td>Present</td>
         </tr>
       </tbody>
     </table>
+    <hr />
+    <br />
+    <table>
+      <caption>
+        Personal information
+      </caption>
+      <tr>
+        <th>Sl No</th>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <td>Monika</td>
+        <td>Abhijeet</td>
+        <td>Gaanavi</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>25</td>
+        <td>30</td>
+        <td>5</td>
+      </tr>
+    </table>
+    <hr />
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Monika</td>
+        <td>Abhijeet</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Abhijeet</td>
+        <td>patil</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Gaanavi</td>
+        <td>Abhijeet</td>
+        <td>5</td>
+      </tr>
+    </table>
+
+    <h1>Demo of lists</h1>
+    <h3>Unordered Lists to display list of beverages</h3>
+    <ul style="list-style-type: circle">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Badam milk</li>
+    </ul>
+    <h3>Ordered Lists to display list of beverages</h3>
+    <ol type="A">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Badam milk</li>
+    </ol>
+    <h3>Descriptive Lists to display list of beverages</h3>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>It is a hot beverage that is yummy</dd>
+      <dt>Milk</dt>
+      <dd>It is a white milk suitable for babies</dd>
+    </dl>
+
+    <h1>Nested list elements to display cuisines</h1>
+    <ul>
+      <li>
+        North Indian
+        <ol>
+          <li>Roti</li>
+          <li>Palak paneer</li>
+          <li>Kadai paneer</li>
+        </ol>
+      </li>
+      <li>
+        South Indian
+        <ol>
+          <li>Rice</li>
+          <li>Sambar</li>
+          <li>Pulav</li>
+        </ol>
+      </li>
+      <li>
+        Chinese
+        <ol>
+          <li>Gobi Manchurian</li>
+          <li>Hot and sour soup</li>
+          <li>Hakka Noodles</li>
+        </ol>
+      </li>
+    </ul>
   </body>
 </html>
