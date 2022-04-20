@@ -29,9 +29,27 @@ p {
 
 body {
   /* background-image: url("./images/flower.jpeg");  */
-  /* background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   /* background: url("./images/flower.jpeg") no-repeat; */
   background-size: cover;
+
+  /* background-image: linear-gradient(red, yellow); */
+  /* background-image: linear-gradient(
+    to bottom right,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  ); */
+  background-image: linear-gradient(
+    to right bottom,
+    red 20%,
+    blue 30%,
+    green 50%
+  );
 }
 
 .click-btn {
@@ -141,6 +159,23 @@ p:last-child {
   color: darkolivegreen;
 }
 
+input {
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
+  border: 3px solid red;
+}
+input[type="text"] {
+  background-color: bisque;
+  transition: width 0.5 ease-in-out;
+}
+input[type="password"] {
+  background-color: bisque;
+}
 input:focus {
-  background-color: aquamarine;
+  background-color: aquamarine !important;
+  width: 80%;
+}
+input:focus {
+  background-color: red;
 }
