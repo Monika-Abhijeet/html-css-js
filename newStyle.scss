@@ -1,0 +1,17 @@
+@import "./variable.scss";
+div {
+  .hello {
+    color: $primary;
+  }
+}
+.container1 {
+  h1 {
+    color: $secondary;
+  }
+}
+
+.container2 {
+  div {
+    color: $secondary;
+  }
+}
