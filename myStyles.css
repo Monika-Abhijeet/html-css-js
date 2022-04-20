@@ -1,0 +1,40 @@
+/* id selector */
+#id-demo {
+  color: red;
+}
+/* universal selector */
+* {
+  text-align: center;
+}
+/* class selector */
+.personal-details {
+  font-size: 20px;
+  color: blue;
+  border: 2px solid red;
+  border-radius: 30px;
+  background-color: aqua;
+  margin: 100px;
+  /* margin-top: 200px;
+  margin-right: 20px;
+  margin-bottom: 300px;
+  margin-left: 50px; */
+  margin: 20px 20px 20px 50px;
+  /* opacity: 0.5; */
+}
+/* element selector */
+
+p {
+  text-align: center;
+}
+
+body {
+  /* background-image: url("./images/flower.jpeg");  */
+  /* background-repeat: no-repeat;*/
+  /* background: url("./images/flower.jpeg") no-repeat; */
+  background-size: cover;
+}
+
+.click-btn {
+  padding: 10px;
+  padding-left: 100px;
+}
