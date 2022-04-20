@@ -4,7 +4,7 @@
 }
 /* universal selector */
 * {
-  text-align: center;
+  /* text-align: center; */
 }
 /* class selector */
 .personal-details {
@@ -36,5 +36,69 @@ body {
 
 .click-btn {
   padding: 10px;
-  padding-left: 100px;
+  padding-left: top right bottom left;
+}
+.convert-to-uppercase {
+  text-transform: capitalize;
+  font-family: cursive;
+}
+
+.fruits {
+  list-style-type: square;
+}
+
+td {
+  text-align: center;
+}
+
+.personal-table {
+  border-bottom: 2px solid red;
+  border-collapse: collapse;
+}
+.personal-table tr {
+  height: 100px;
+  vertical-align: center;
+}
+.personal-table td,
+.personal-details th {
+  border: 2px solid red;
+}
+
+.inline-block {
+  display: block;
+}
+
+.relative-position {
+  position: relative;
+  top: 100px;
+  left: 30px;
+}
+
+.absolute-position {
+  position: absolute;
+  top: 100px;
+}
+.fixed-position {
+  position: fixed;
+  top: 100px;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: red;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  width: 100%;
 }
