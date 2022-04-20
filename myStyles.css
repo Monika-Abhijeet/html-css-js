@@ -69,13 +69,13 @@ td {
 }
 
 .relative-position {
-  position: relative;
+  /* position: relative; */
   top: 100px;
   left: 30px;
 }
 
 .absolute-position {
-  position: absolute;
+  /* position: absolute; */
   top: 100px;
 }
 .fixed-position {
@@ -101,4 +101,46 @@ td {
   color: white;
   text-align: center;
   width: 100%;
+}
+
+.box1 {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 100px;
+  background-color: green;
+  z-index: 2;
+}
+
+.box2 {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 150px;
+  background-color: blue;
+  z-index: 4;
+}
+
+.description {
+  height: 200px;
+  background-color: antiquewhite;
+  border: 2px solid red;
+  overflow: auto;
+  margin-bottom: 100px;
+}
+
+.description:hover {
+  background-color: aqua;
+}
+
+.float-demo {
+  float: right;
+}
+
+p:last-child {
+  color: darkolivegreen;
+}
+
+input:focus {
+  background-color: aquamarine;
 }
