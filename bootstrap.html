@@ -218,12 +218,98 @@
     </div>
     <h1>Flex demo</h1>
     <!-- justify-content-start,justify-content-end, justify-content-center, justify-content-between, justify-content-around -->
-    <div class="parent-div d-flex justify-content-around align-items-center">
+    <div class="parent-div d-flex flex-column flex-lg-row">
       <div class="child-div">1</div>
       <div class="child-div">2</div>
       <div class="child-div">3</div>
 
       <div class="child-div">4</div>
+    </div>
+    <h1>Forms demo</h1>
+    <div class="container">
+      <form>
+        <div>
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="enter email"
+            disabled
+          />
+        </div>
+        <div>
+          <label for="name" class="form-label">name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="enter name"
+            readonly
+          />
+        </div>
+        <div>
+          <label for="name" class="form-label">COLOR</label>
+          <input
+            type="color"
+            id="name"
+            placeholder="enter name"
+            class="form-control form-control-color"
+            readonly
+          />
+        </div>
+        <div>
+          <label for="comment" class="form-label">Comments</label>
+          <textarea class="form-control" rows="7" id="comment"></textarea>
+        </div>
+
+        <select class="form-select">
+          <option>1</option>
+          <option>2</option>
+
+          <option>3</option>
+
+          <option>4</option>
+        </select>
+        <div>
+          <label for="fruits" class="form-label"
+            >Choose your favourite fruit</label
+          >
+          <input class="form-control" list="fruits" name="fruit" id="fruit" />
+          <datalist id="fruits">
+            <option>Apple</option>
+            <option>Mango</option>
+            <option>Orange</option>
+          </datalist>
+        </div>
+        <div clas="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="car"
+            name="car"
+            value="car"
+            checked
+          />
+          <label for="car" class="form-label">Car</label>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="bus"
+            name="bus"
+            value="bus"
+          />
+          <label for="bus">Bus</label>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="truck"
+            name="truck"
+            value="truck"
+          />
+          <label for="car">Truck</label>
+        </div>
+      </form>
     </div>
     <div>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus ad,
