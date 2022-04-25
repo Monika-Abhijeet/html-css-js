@@ -1,3 +1,6 @@
-body {
-  /* background-color: antiquewhite; */
+.personal-info {
+  width: 300px;
+  height: 400px;
+  /* float: left; */
+  display: inline-block;
 }
