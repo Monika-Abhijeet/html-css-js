@@ -154,23 +154,100 @@ console.log(newFruit);
 
 console.log(fruits.sort());
 
-const numbers = [67, 45, 3, 72, 89, 66, 1];
+const numbers = [17, 2, 55, 42, 3, 7];
 console.log(numbers.sort());
 console.log(numbers.reverse());
 
 // square of each number
 let numberArray = [1, 2, 3, 4, 5];
 
-// let squareNumbers = numberArray.map(calculateSquare);
+let squareNumbers = numberArray.map(calculateSquare);
 
 function calculateSquare(value) {
   return value * value;
 }
 
-// console.log(squareNumbers);
-var squareNumbers = [];
-for (i = 0; i < numberArray.length; i++) {
-  let a = calculateSquare(numberArray[i]);
-  squareNumbers.push(a);
+function compareNumbers(a, b) {
+  return a - b;
 }
-console.log(squareNumbers);
+
+let newNum = numbers.sort(compareNumbers);
+
+// console.log(squareNumbers);
+// var squareNumbers = [];
+// for (i = 0; i < numberArray.length; i++) {
+//   let a = calculateSquare(numberArray[i]);
+//   squareNumbers.push(a);
+// }
+console.log(newNum);
+// normal function
+function sum(a, b) {
+  return a + b;
+}
+
+multiply = (a, b) => {
+  return a * b;
+};
+
+// multiply = (a, b) => a * b;
+console.log(`sum is ${sum(2, 4)}`);
+console.log(`product is ${multiply(2, 4)}`);
+
+function isPositive(number) {
+  return number > 0;
+}
+
+isPositive = (number) => {
+  return number > 0;
+};
+
+// isPositive = number => number > 0
+
+function randomNumber() {
+  return Math.random;
+}
+
+randomNumber = () => {
+  return Math.random;
+};
+
+document.addEventListener("click", function () {
+  console.log("mouse clicked ");
+});
+
+document.addEventListener("click", () => {
+  console.log("mouse clicked arrow");
+});
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  printNameFunction() {
+    setTimeout(function () {
+      console.log("function" + this.name);
+    }, 1000);
+  }
+
+  printNameArrow() {
+    setTimeout(() => {
+      console.log("arrow" + this.name);
+    }, 1000);
+  }
+}
+
+let person = new Person("Monika");
+// console.log(this.name);
+// person.printNameFunction();
+// person.printNameArrow();
+
+// Default Arguments
+
+let guestUser = (name, courseCount = 0, age = 18) => {
+  return `Hello ${name} and your course count is ${courseCount} and age is ${age}`;
+};
+
+console.log(guestUser("monika", 3, 28));
+console.log(guestUser("Abhijeet", 5, 32));
+console.log(guestUser("Abhijeet", 3, 32));
