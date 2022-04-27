@@ -118,3 +118,59 @@ console.log(message.trim());
 
 console.log(stringOne.length);
 console.log(stringTwo.length);
+
+const fruits = ["Apple", "Mango", "Grapes", "Guava"];
+const vegetables = ["onion", "tomato", "potato"];
+const beverages = ["tea", "coffee", "milk"];
+
+// toString()
+console.log(fruits.toString());
+console.log(fruits.join("/"));
+
+// push()
+fruits.push("watermelon");
+console.log(fruits);
+console.log(fruits.pop());
+console.log(fruits);
+
+console.log(fruits[1]);
+
+// length
+console.log(fruits[fruits.length - 1]);
+
+// concat()
+console.log(fruits.concat(vegetables, beverages));
+
+// splice()
+// fruits.splice(2, 0, "banana", "kiwi", "lemon");
+console.log(fruits);
+
+// fruits.splice(2, 1);
+console.log(fruits);
+
+// slice()
+const newFruit = fruits.slice(2);
+console.log(newFruit);
+
+console.log(fruits.sort());
+
+const numbers = [67, 45, 3, 72, 89, 66, 1];
+console.log(numbers.sort());
+console.log(numbers.reverse());
+
+// square of each number
+let numberArray = [1, 2, 3, 4, 5];
+
+// let squareNumbers = numberArray.map(calculateSquare);
+
+function calculateSquare(value) {
+  return value * value;
+}
+
+// console.log(squareNumbers);
+var squareNumbers = [];
+for (i = 0; i < numberArray.length; i++) {
+  let a = calculateSquare(numberArray[i]);
+  squareNumbers.push(a);
+}
+console.log(squareNumbers);
