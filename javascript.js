@@ -251,3 +251,53 @@ let guestUser = (name, courseCount = 0, age = 18) => {
 console.log(guestUser("monika", 3, 28));
 console.log(guestUser("Abhijeet", 5, 32));
 console.log(guestUser("Abhijeet", 3, 32));
+
+const alphabets = ["A", "B", "C", "D", "E", "F"];
+var fruits1 = [
+  "apple",
+  "orange",
+  "jackfruits",
+  "watermelon",
+  "mango",
+  "grapes",
+  "guava",
+];
+const num = [1, 2, 3, 4, 5, 6];
+
+// a = alphabets[0];
+// b = alphabets[1];
+
+const [a, , c, ...remainingFruits] = fruits1;
+
+console.log(`a is ${a} and and c is ${c}`);
+console.log(`remaining fruits are ${remainingFruits}`);
+console.log(remainingFruits);
+const alphaNumeric = [...alphabets, ...num, ...fruits1];
+console.log(alphaNumeric);
+
+function sumAndMultiply(a, b) {
+  return [a + b, a * b];
+}
+
+const [add, product] = sumAndMultiply(2, 3);
+console.log(add);
+console.log(product);
+
+let person1 = {
+  firstName: "Monika",
+  lastName: "Abhijeet",
+  email: "abc@gmail.com",
+  phNo: "777766676878",
+  address: {
+    city: "bangalore",
+    state: "karnataka",
+  },
+};
+
+const {
+  firstName,
+  email,
+  address: { city },
+} = person1;
+// console.log(person1.firstName);
+console.log(firstName, email, city);
