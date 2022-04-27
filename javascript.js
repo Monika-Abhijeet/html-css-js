@@ -294,6 +294,16 @@ let person1 = {
   },
 };
 
+let person2 = {
+  firstName: "Gaanavi",
+  lastName: "Abhijeet",
+  email: "gaanavi@gmail.com",
+  phNo: "66666",
+  address: {
+    city: "Hyderabad",
+    state: "AP",
+  },
+};
 const {
   firstName,
   email,
@@ -301,3 +311,32 @@ const {
 } = person1;
 // console.log(person1.firstName);
 console.log(firstName, email, city);
+
+const person3 = { ...person1, ...person2 };
+console.log(person3);
+
+function printUser({ firstName, email }) {
+  console.log(`First name is ${firstName} and email is ${email}`);
+}
+printUser(person1);
+
+// call , apply and bind method
+
+let employee = {
+  firstName: "Monika",
+  lastName: "Abhijeet",
+};
+function printFullName(city, state) {
+  console.log(`${this.firstName} ${this.lastName} from ${city}, ${state}`);
+}
+printFullName.call(employee, "davangere", "karnataka");
+
+let employee2 = {
+  firstName: "Sachin",
+  lastName: "tendulkar",
+};
+
+printFullName.call(employee2, "bangalore", "karnataka");
+printFullName.apply(employee2, ["mumbai", "maharashtra"]);
+let newFunction = printFullName.bind(employee2, "salem", "tamil nadu");
+newFunction();
