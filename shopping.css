@@ -1,0 +1,40 @@
+.shopping-container {
+  background-color: bisque;
+  height: 100vh;
+}
+
+.header {
+  background-color: aquamarine;
+  height: 10vh;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.sidebar {
+  background-color: brown;
+  height: 90vh;
+  width: 300px;
+  margin-top: 10vh;
+}
+
+.footer {
+  background-color: aquamarine;
+  height: 5vh;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.main-content {
+  margin-top: 10vh;
+}
+.logo {
+  height: 70%;
+  width: auto;
+}
+
+.nav-item {
+  list-style-type: none;
+}
